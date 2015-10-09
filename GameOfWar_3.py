@@ -75,6 +75,8 @@ def playRound(PlayerA, PlayerB):
 		elif len(PlayerB) < 4:
 			PlayerB = []
 		else:
+			PlayerA.append(cardA)
+			PlayerB.append(cardB)
 			WAR(PlayerA, PlayerB)
 	return PlayerA, PlayerB
 
@@ -89,7 +91,7 @@ def WAR(PlayerA, PlayerB):
 	Brank = 0
 	
 	# Setting 3 cards aside
-	for i in range(3):
+	for i in range(4):
 		saveA = PlayerA.pop()
 		saveB = PlayerB.pop()
 		saveCardsA.append(saveA)
