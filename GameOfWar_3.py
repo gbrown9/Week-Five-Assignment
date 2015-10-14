@@ -1,4 +1,4 @@
-__author___ = "Gabe"
+__author___ = "Gabe Brown"
 
 #IWU - CIS - 125
 
